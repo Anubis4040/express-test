@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json())
 
 app.get('/webhook', (req, res) => {
-    console.log(req.body);
+    console.log(req.body,'req-body');
     res.send('Hello World! xddd')
 })
 
